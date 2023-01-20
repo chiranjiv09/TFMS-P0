@@ -3,7 +3,7 @@ package com.tfms.model;   //POJO
 public class Associate {
 	
   private String traineeName;
-  private int traineeId;
+  private String traineeId;
   private String track;
   private String  qualification;
   private String experience;
@@ -16,11 +16,11 @@ public Associate() {
 }
 
 
-public Associate(String traineeName, int traineeId, String track, String qualification, String experience,
+public Associate(String traineeName,String traineeId, String track, String qualification, String experience,
 		String trainerId) {
 	super();
 	this.traineeName = traineeName;
-	this.traineeId = traineeId;
+    this.traineeId = traineeId;
 	this.track = track;
 	this.qualification = qualification;
 	this.experience = experience;
@@ -38,12 +38,12 @@ public void setTraineeName(String traineeName) {
 }
 
 
-public int getTraineeId() {
+public String getTraineeId() {
 	return traineeId;
 }
 
 
-public void setTraineeId(int traineeId) {
+public void setTraineeId(String traineeId) {
 	this.traineeId = traineeId;
 }
 

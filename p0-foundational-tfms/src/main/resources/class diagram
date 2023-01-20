@@ -1,0 +1,45 @@
+                                                                                        ,-----------------------------------------------------------.                                  
+                                                                                        |AssociateDao                                               |                                  
+,------------------------------------.   ,-----------------------.   ,--------------.   |-----------------------------------------------------------|                                  
+|App                                 |   |MenuCard               |   |Associatemodel|   |addForm(associate: Associate): int                         |                                  
+|------------------------------------|   |-----------------------|   |--------------|   |updateForm(associate: Associate, traineeId: String): String|                                  
+|+{static} main(args: String[]): void|   |+{static} print(): void|   `--------------'   |deleteForm(traineeId: String): void                        |                                  
+`------------------------------------'   `-----------------------'                      |getAssociate(traineeId: String): Associate                 |                                  
+                                                                                        `-----------------------------------------------------------'                                  
+                                                                                                                                                                                       
+                                                                                                                                                                                       
+                                         ,------------------------------------.                         | ,------------------------------------------------------------.               
+,-------------------------------------.  |MenuDrivenApplication               |                         | |AssociateDaoImplementation                                  |               
+|DatabaseConnection                   |  |------------------------------------|                         | |------------------------------------------------------------|               
+|-------------------------------------|  |+{static} main(args: String[]): void|                         | |~{static} con: Connection                                   |               
+|-{static} con: Connection            |  |-{static} getAssociate(): void      |                         | |+addForm(associate: Associate): int                         |               
+|+{static} getConnection(): Connection|  |-{static} deleteForm(): void        |                         | |+updateForm(associate: Associate, traineeId: String): String|               
+`-------------------------------------'  |-{static} updateForm(): void        |                         | |+deleteForm(traineeId: String): void                        |               
+                                         |-{static} addForm(): void           |                         | |+getAssociate(traineeId: String): Associate                 |               
+                                         `------------------------------------'                         | `------------------------------------------------------------'               
+                                                                                                                                                                                       
+                                                      ,-------------------------------------------------------------------------------------------------------------------------------.
+                                                      |Associate                                                                                                                      |
+                                                      |-------------------------------------------------------------------------------------------------------------------------------|
+                                                      |-traineeName: String                                                                                                           |
+                                                      |-traineeId: String                                                                                                             |
+                                                      |-track: String                                                                                                                 |
+                                                      |-qualification: String                                                                                                         |
+                                                      |-experience: String                                                                                                            |
+                                                      |-trainerId: String                                                                                                             |
+                                                      |+Associate()                                                                                                                   |
+                                                      |+Associate(traineeName: String, traineeId: String, track: String, qualification: String, experience: String, trainerId: String)|
+                                                      |+getTraineeName(): String                                                                                                      |
+                                                      |+setTraineeName(traineeName: String): void                                                                                     |
+                                                      |+getTraineeId(): String                                                                                                        |
+                                                      |+setTraineeId(traineeId: String): void                                                                                         |
+                                                      |+getTrack(): String                                                                                                            |
+                                                      |+setTrack(track: String): void                                                                                                 |
+                                                      |+getQualification(): String                                                                                                    |
+                                                      |+setQualification(qualification: String): void                                                                                 |
+                                                      |+getExperience(): String                                                                                                       |
+                                                      |+setExperience(experience: String): void                                                                                       |
+                                                      |+getTrainerId(): String                                                                                                        |
+                                                      |+setTrainerId(trainerId: String): void                                                                                         |
+                                                      |+toString(): String                                                                                                            |
+                                                      `-------------------------------------------------------------------------------------------------------------------------------'
